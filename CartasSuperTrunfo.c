@@ -7,16 +7,53 @@
 //Teste larissa
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    /*
+    Adição de variáveis para armazenar os atributos da cidade
+    atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.   
+    */
+    char Estado;
+    char codigo_carta[10];
+    char nome_cidade[20];
+    int populacao;
+    float area;
+    float pib; 
+    int pontos_turisticos;
 
+
+    //Solicita ao usuário cadastre as cidades com base nas informações abaixo
+
+    printf("Digite a Letra do estado: \n");
+    scanf("%c", &Estado);
+    getchar();
+
+    printf("Digite o codigo da carta: \n");
+    scanf("%s", codigo_carta);
+
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", nome_cidade);
+
+    printf("Digite o numero da população: \n");
+    scanf("%d", &populacao);
+
+    printf("Digite o valor da area(em km2): \n");
+    scanf("%f", &area);
+
+    printf("Digite o valor do PIB: \n");
+    scanf("%f", &pib);
+
+    printf("Digite o numero de pontos turisticos: \n");
+    scanf("%d", &pontos_turisticos);
+
+    //Exibe os valores inseridos pelo usuário
+
+    printf("Estado: %c\n", Estado);
+    printf("Codigo da carta: %s\n", codigo_carta);
+    printf("Nome da cidade: %s\n", nome_cidade);
+    printf("Populacao: %d\n", populacao);
+    printf("Area: %f\n", area);
+    printf("PIB: %f\n", pib);
+    printf("Pontos turisticos: %d\n", pontos_turisticos);
+
+// Fim do código
     return 0;
 }
