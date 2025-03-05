@@ -11,10 +11,10 @@ int main() {
     char cidade1[50];          // Nome da cidade
     unsigned long populacao1;  // População
     float area1;               // Área em km²
-    float pib1;                // PIB em bilhões de reais
+    float pib1;                // PIB em bilhões
     int pontos_turisticos1;    // Número de pontos turísticos
     float densidade1;          // Densidade populacional (população/área)
-    float pibPerCapita1;       // PIB per capita ((PIB*1e9)/população)
+    float pibPerCapita1;       // PIB per capita/população)
 
     // Variáveis para a Carta 2
     char estado2;
